@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fffaf4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ffb6b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffefef;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ffe3e3, #fff);
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #d64b4b;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff7070;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff4d4d;
+}
+
+/* Products */
+#products {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+#products h2 {
+  margin-bottom: 30px;
+  color: #d64b4b;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 25px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  transition: transform 0.5s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product h3 {
+  color: #ff4d4d;
+  margin: 10px 0 5px;
+}
+
+.product p {
+  font-size: 0.95em;
+}
+.banner {
+  text-align: center;
+  padding: 3rem;
+  background: #fce9ed;
+  font-size: 1.5rem;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background: linear-gradient(to right, #ffe3e3, #fff);
+  text-align: center;
+}
+.testimonials {
+  padding: 3rem;
+  background: #fff;
+  text-align: center;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.review {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  font-style: italic;
+}
+
+/* Contact */
+#contact {
+  background-color: #fff0f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 15px;
+  color: #d64b4b;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-inline: auto;
+  gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn{
+  background-color: #ff7070;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff4d4d;
+}
+
+/* Footer */
+footer {
+  background-color: #ffb6b6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+/* --- Hamburger Menu --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.emmexdigitalagency{
+ background: linear-gradient(to right, #ffe3e3, #fff);
+ text-align: center;
+}
